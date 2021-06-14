@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">EtechFood</string>
+    <string name="phone">Phone</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="dont_have_an_account_sign_up">Dont have an Account? Sign Up</string>
+    <string name="rider_logo">rider_logo</string>
+    <string name="admin_logo">admin_logo</string>
 </resources>

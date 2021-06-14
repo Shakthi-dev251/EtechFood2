@@ -51,7 +51,7 @@
             android:id="@+id/btn_restaurant_SignIn"
             android:layout_width="300dp"
             android:layout_height="60dp"
-            android:text="REstaurants Sign In"
+            android:text="Restaurants Sign In"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:textAllCaps="false"

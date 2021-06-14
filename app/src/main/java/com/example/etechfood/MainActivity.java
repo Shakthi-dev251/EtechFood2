@@ -2,10 +2,15 @@ package com.example.etechfood;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.etechfood.AdministratorUser.AdministratorSignInActivity;
+import com.example.etechfood.ClientUser.ClientUserSignInActivity;
+import com.example.etechfood.RestaurantUser.RestaurantSignInActivity;
+import com.example.etechfood.RiderUser.RiderSignInActivity;
 import com.google.android.material.button.MaterialButton;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -35,13 +40,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
 
         if (view == clientUser){
-            Toast.makeText(this,"Clicked clientUser", Toast.LENGTH_SHORT).show();
+            Intent clientUser = new Intent(MainActivity.this, ClientUserSignInActivity.class);
+            startActivity(clientUser);
+
         }else if (view == restaurantUser){
-            Toast.makeText(this,"Clicked restaurantUser", Toast.LENGTH_SHORT).show();
+            Intent restaurantUser = new Intent(MainActivity.this, RestaurantSignInActivity.class);
+            startActivity(restaurantUser);
+
         }else if (view == riderUser){
-            Toast.makeText(this,"Clicked riderUser", Toast.LENGTH_SHORT).show();
+            Intent riderUser = new Intent(MainActivity.this, RiderSignInActivity.class);
+            startActivity(riderUser);
+
         }else if (view == administratorUser){
-            Toast.makeText(this,"Clicked administratorUser", Toast.LENGTH_SHORT).show();
+            Intent administratorUser = new Intent(MainActivity.this, AdministratorSignInActivity.class);
+            startActivity(administratorUser);
+
         }
 
     }
